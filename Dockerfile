@@ -8,8 +8,6 @@ RUN npm install
 
 COPY ./client .
 
-RUN npm run create
-
 
 FROM node:12-alpine
 

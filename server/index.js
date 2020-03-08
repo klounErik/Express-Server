@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 80
 
 const dbConnect = () => {
     try {
-        mongoose.connect(`${process.env.DB_HOST}://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_URL}`, {useNewUrlParser: true})
+        mongoose.connect(`${process.env.DB_HOST}://${process.env.DB_USER}:${process.env.DB_PASSWORD}${process.env.DB_URL}`, {useNewUrlParser: true})
     } catch (error) {
         console.log(error)    
     }
@@ -20,6 +20,8 @@ const dbConnect = () => {
 app.use(bodyParser.json())
 app.use(cors())
 app.use('/api', Router)
+
+app.use(express.static('../build'))
 
 dbConnect()
 

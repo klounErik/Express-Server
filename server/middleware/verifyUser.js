@@ -14,7 +14,7 @@ const verifyUser = (req, res, next) => {
             }
         })
     }else {
-        res.sendFile(__dirname + '/index.html')
+        res.send(403)
     }
 }
 

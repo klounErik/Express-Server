@@ -2,7 +2,7 @@ FROM node:10 as server
 
 WORKDIR /usr/src/app
 
-COPY package*.json /usr/src/app
+COPY package*.json ./usr/src/app
 
 WORKDIR /usr/src/app
 

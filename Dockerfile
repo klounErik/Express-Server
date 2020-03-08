@@ -8,8 +8,6 @@ RUN npm install
 
 RUN npm run create
 
-COPY ./build .
-
 FROM node:12-alpine
 
 WORKDIR /usr/app/server

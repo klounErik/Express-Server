@@ -9,6 +9,4 @@ COPY . .
 
 EXPOSE 80
 
-WORKDIR /usr/src/app
-
 CMD [ "node", "index.js" ]

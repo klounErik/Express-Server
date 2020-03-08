@@ -1,8 +1,8 @@
 FROM node:10 as server
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-COPY package*.json /app
+COPY package*.json ./
 
 RUN npm install
 # If you are building your code for production
@@ -10,7 +10,7 @@ RUN npm install
 
 # Bundle app source
 
-COPY . /app
+COPY . .
 
 EXPOSE 80
 

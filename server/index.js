@@ -23,6 +23,8 @@ app.use('/api', Router)
 
 app.use(express.static(__dirname, 'build'))
 
+console.log(__dirname)
+
 dbConnect()
 
 try {

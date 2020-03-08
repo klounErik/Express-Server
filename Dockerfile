@@ -10,6 +10,8 @@ COPY ./client .
 
 RUN npm run create
 
+COPY ./client/build .
+
 FROM node:12-alpine
 
 WORKDIR /usr/app/server

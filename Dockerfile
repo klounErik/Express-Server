@@ -6,9 +6,9 @@ COPY /client/package*.json ./
 
 RUN npm install
 
-RUN npm run create
-
 COPY ./client .
+
+RUN npm run create
 
 
 FROM node:12-alpine

@@ -1,6 +1,6 @@
 FROM node:10 as server
 
-mkdir /app/server
+RUN mkdir /app/server
 
 COPY package*.json /app/server
 

@@ -1,5 +1,7 @@
 FROM node:10 as server
 
+mkdir /app/server
+
 COPY package*.json /app/server
 
 WORKDIR /app/server

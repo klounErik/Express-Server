@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const mongoose = require('mongoose')
 
-const Router = require('./router/router')
+const Router = require('./router')
 
 const app = express()
 
@@ -21,7 +21,7 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use('/api', Router)
 
-app.use(express.static('../build'))
+// app.use(express.static('../build'))
 
 dbConnect()
 

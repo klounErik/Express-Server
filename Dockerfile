@@ -10,8 +10,6 @@ COPY ./client .
 
 RUN npm run create
 
-COPY . ./
-
 
 FROM node:12-alpine
 

@@ -21,7 +21,7 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use('/api', Router)
 
-app.use(express.static('build'))
+app.use(express.static('./client/build'))
 
 dbConnect()
 

@@ -2,7 +2,7 @@ FROM node:10 as server
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY package*.json /app
 
 RUN npm install
 # If you are building your code for production

@@ -5,7 +5,7 @@ COPY package.json ./server
 
 RUN npm install
 
-COPY . .
+COPY ./server .
 
 EXPOSE 80
 

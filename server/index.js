@@ -21,9 +21,7 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use('/api', Router)
 
-app.use(express.static(__dirname, 'build'))
-
-console.log(__dirname)
+app.use(express.static('./client/build'))
 
 dbConnect()
 

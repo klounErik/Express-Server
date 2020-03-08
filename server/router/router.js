@@ -1,8 +1,8 @@
 const express = require('express')
 const Router = express.Router()
 const jwt = require('jsonwebtoken')
-const User = require('./userSchema')
-const verifyUser = require('./verifyUser')
+const User = require('../schema/userSchema')
+const verifyUser = require('../middleware/verifyUser')
 const bcrypt = require('bcrypt')
 
 Router.get('/users', verifyUser, (req, res) => {

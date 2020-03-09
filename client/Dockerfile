@@ -2,9 +2,6 @@ FROM node:12-alpine as build
 
 WORKDIR /usr/app/client
 
-COPY  ./ ./
+COPY  . .
 
 RUN npm install
-
-COPY . .
-

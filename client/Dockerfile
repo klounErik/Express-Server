@@ -6,6 +6,8 @@ COPY  /client/package.json /usr/app/client
 
 RUN npm install
 
-COPY ./client .
+COPY ./client /usr/app/client
 
 RUN npm run create
+
+COPY ./client/build /usr/app/client/build

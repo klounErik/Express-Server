@@ -8,4 +8,3 @@ RUN npm install
 
 COPY ./client .
 
-CMD ["npm", "run", "create"]

@@ -7,3 +7,5 @@ COPY  /client/package.json /usr/app/client
 RUN npm install
 
 COPY ./client .
+
+RUN npm run create

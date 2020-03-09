@@ -6,6 +6,6 @@ COPY  /client/package.json /usr/app/client
 
 RUN npm install
 
-COPY . /usr/app/client
+COPY ./client .
 
 CMD ["npm", "run", "create"]

@@ -6,5 +6,5 @@ COPY  /client/package.json /usr/app/client
 
 RUN npm install
 
-COPY ./client .
+COPY . .
 

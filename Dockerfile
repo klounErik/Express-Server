@@ -6,7 +6,7 @@ COPY /client/package*.json ./
 
 RUN npm install
 
-COPY ./server .
+COPY ./client .
 
 RUN npm run create
 

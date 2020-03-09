@@ -1,4 +1,4 @@
-FROM node:12-alpine
+FROM node:12-alpine as build
 
 WORKDIR /usr/app/client
 
@@ -20,5 +20,7 @@ COPY /server/package*.json ./
 RUN npm install
 
 COPY ./server .
+
+COPY --from=build /usr/app/client/build ./usr/app/server
 
 EXPOSE 80

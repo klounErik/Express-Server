@@ -10,4 +10,4 @@ COPY ./client /usr/app/client
 
 RUN npm run create
 
-COPY ./build /usr/app/client
+COPY . /usr/app/client

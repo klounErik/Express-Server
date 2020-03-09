@@ -9,5 +9,3 @@ RUN npm install
 COPY ./client ./
 
 RUN npm run create
-
-COPY ./client/build /usr/app/server
